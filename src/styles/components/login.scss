@@ -1,0 +1,9 @@
+.login {
+    width: 3rem;
+    height: 3rem;
+    margin-right: 4rem;
+    @media ($phone) {
+        width: 1.7rem;
+        height: 1.7rem;
+    }
+}

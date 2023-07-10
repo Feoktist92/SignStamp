@@ -1,0 +1,117 @@
+.audience {
+    background-color: $backgroundColor;
+    padding: 9rem 1.5rem 16rem 1.5rem;
+    position: relative;
+    @media ($tablet) {
+        padding: 7rem 4.2rem;
+    }
+    @media ($phone) {
+        padding: 3rem 0.6rem 6rem;
+    }
+
+    
+    &::before {
+        position: absolute;
+        content: url("../images/lines.svg");
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        @media ($phone) {
+            display: none;
+        }
+    }
+    &__title {
+        @include h2();
+        margin-bottom: 6rem;
+        @media ($tablet) {
+            margin-bottom: 5rem;
+        }
+    }
+    &__wrapper {
+        max-width: 100%;
+        display: flex;
+        flex-direction: row;
+        @media ($tablet) {
+        flex-direction: column;
+        }
+    }
+
+    &__images {
+        display: flex;
+        position:relative;
+        z-index: 2;
+        width: 58%;
+        @media ($tablet) {
+            margin: 0 auto;
+            width: 100%;
+            margin-bottom: 5.2rem;
+        }
+        @media ($phone) {
+            margin-bottom: 5rem;
+        }
+    }
+    &__image {
+        display: block;
+        object-fit: cover;
+        object-position: center;
+        width: 100%;
+        align-self: center;
+        }
+
+    &__play {
+        position: absolute;
+        display: inline-block;
+        z-index: 3;
+        top:calc(50% - 5.15rem);
+        left:calc(50% - 5.15rem);
+    }
+    &__text {
+        position: relative;
+        padding-top: 11.8rem;
+        padding-bottom: 0.8rem;
+        margin-left: 11.4rem;
+        z-index: 2;
+        @media ($tablet) {
+            padding: 0;
+            margin: 0;
+        }
+    }
+    &__item {
+        padding-left: 7.2rem;
+        color: #000;
+        font-size: 2.2rem;
+        margin-bottom: 7rem;
+        max-width:46rem;
+        position: relative;
+        @media ($tablet) {
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+        @media ($phone) {
+            font-size: 1.6rem;
+        }
+    &::before {
+        content: url("../images/list-style.svg");
+        position: absolute;
+        top: 0;
+        left: 0rem;
+        @media ($phone) {
+            content: url("../images/list-style-phone.svg");
+        }
+    }
+    }
+
+    &__help {
+        font-family: $mainFont;
+        margin-top: 12.2rem;
+        color: $textColor;
+        font-size: 2.4rem;
+        font-weight: 600;
+        @media ($tablet) {
+            text-align: center;
+            margin-top: 5rem;
+            text-align: center;
+            font-size: 2.2rem;
+        }
+    }
+}

@@ -1,0 +1,100 @@
+.tarifs {
+    background-color: $whiteColor;
+    padding: 10rem 1.5rem;
+    @media ($tablet) {
+        padding: 10rem 2rem 10.4rem
+    }
+    @media ($phone) {
+        padding: 8rem 2rem 7.2rem;
+    }
+    position: relative;
+    z-index: 0;
+    &::before {
+        @media ($tablet) {
+            content: url("../images/lines-top.svg");
+            position: absolute;
+            top: 0;
+            right: 0; 
+            z-index: -1;
+        }
+        @media ($phone) {
+            display: none;
+        }
+    }
+    &::after {
+        @media ($phone) {
+            content: url("../images/lines-tarifs-phone.svg");
+            position: absolute;
+            bottom: 60px;
+            left: 0;
+            z-index: -1;
+        }
+    }
+    
+
+    &__title {
+        @include h2();
+        margin-bottom: 7rem;
+        @media ($tablet) {
+            margin-bottom: 7.2rem;
+        }
+        @media ($phone) {
+            margin-bottom: 5rem;
+        }
+    }
+
+    &__cards {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-bottom: 5rem;
+        @media ($tablet) {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 3rem;
+        }
+        @media ($phone) {
+            margin-bottom: 2rem;
+        }
+    }
+
+    &__ps {
+        color: #000;
+        font-size: 2.2rem;
+        margin-bottom: 5rem;
+        @media ($tablet) {
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        @media ($phone) {
+            width: 24rem;
+            font-size: 1.2rem;
+            margin-bottom: 5rem;
+        }
+    }
+}
+    &__entry {
+        display: flex;
+        align-items: center;
+        @media ($phone) {
+            flex-direction: column;
+        }
+    }
+    &__signup-btn {
+        @include btnLarge();
+        @media ($phone) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__login {
+        color: $textColorBlue;
+        margin-left: 4rem;
+        font-size: 2.2rem;
+        text-decoration-line: underline;
+        @media ($tablet) {
+            font-size: 1.6rem;
+            margin-left: 2rem;
+        }
+    }
+}

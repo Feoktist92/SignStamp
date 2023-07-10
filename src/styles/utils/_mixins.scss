@@ -1,0 +1,123 @@
+@mixin link() {
+      &:hover {
+        opacity: 0.6;
+      }
+      &:active {
+        color: blue;
+      }
+}
+@mixin btn() {
+    display: inline-block;
+    background: $btnColor;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #DBFFF8;
+    border-radius: 1.5rem;
+    text-align: center;
+    font-size: 1.8rem;
+    font-weight: 500;
+    padding: 1.3rem 2.4rem;
+    cursor: pointer;
+    border: none;
+    user-select: none;
+    transition-duration: 0.4s;
+    &:hover{
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.601);
+    }
+    @media ($tablet) {
+        width: 16.3rem;
+        font-size: 1.4rem;
+        padding: 1.1rem 2.6rem;
+    }
+}
+@mixin btnLarge{
+    @include btn();
+    width: 33rem;
+    font-size: 2.4rem;
+    font-weight: 500;
+    padding: 1.4rem 3.3rem;
+    text-transform: none;
+    @media ($tablet) {
+        font-size: 1.8rem;
+        width: 25.7rem;
+        padding: 1.2rem 3rem;
+    }
+    @media ($phone) {
+        font-size: 1.6rem;
+        width: 23rem;
+        padding: 0.8rem 2.8rem;
+    }
+}
+
+@mixin section($pt:1.5rem, $pb:1.5rem) {
+    padding-bottom: $pb;
+    padding-top: $pt;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+@mixin input() {
+    color: #ADADAD;
+    width: 43.2rem;
+    background-color: #FAFAFF;
+    border-radius: 1.5rem;
+    line-height: 1;
+    text-align: center;
+    padding: 1.3rem 1rem;
+    border: none;
+    box-shadow: 0px 0px 4px 0px rgba(1, 11, 132, 0.70);
+    font-size: 1.8rem;
+    font-weight: 500;
+    @media ($tablet) {
+        max-width: 34.8rem;
+        font-size: 1.4rem;
+        padding: 1rem;
+    }
+    @media ($phone) {
+        max-width: 31.4rem;
+        font-size: 1.2rem;
+    }
+}
+@mixin h1() {
+    display: inline-block;
+    font-size: 9rem;
+    font-family: $titleFont;
+    font-weight: 400;
+    color: transparent;    
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-image: radial-gradient(#000972 100%,#000EC1 100%,#0010E1 100%,#2E3DFA 100%);
+    @media ($tablet) {
+        font-size: 7rem;
+    }
+    @media ($phone) {
+        font-size: 5rem;
+    }
+}
+
+@mixin h2 ($color: $textColor, $align: center) {
+color: $color;
+text-align: $align;
+font-size: 5rem;
+font-weight: 700;
+line-height: 140%;
+@media ($tablet) {
+    font-size: 4rem;
+}
+@media ($phone) {
+    font-size: 3rem;
+}
+}
+
+@mixin itemTitle($color: #140E20) {
+    color: $color;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 140%;
+    @media ($tablet) {
+        font-size: 2.2rem;
+    }
+    @media ($phone) {
+        font-size: 2rem;
+    }
+}

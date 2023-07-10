@@ -1,0 +1,251 @@
+.registration {
+    position: relative;
+    padding: 10rem 1.5rem 15rem 1.5rem;
+    @media ($tablet) {
+        padding: 6.6rem 0 9rem;
+    }
+    @media ($phone) {
+        padding: 7rem 3rem 8rem;
+    }
+
+    &::before{
+        content: "";
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        background-image: url("../images/registration-bg.png");
+        background-position: center;
+        background-size: cover;
+        filter: opacity(0.6);
+        z-index: -1;
+        @media ($tablet) {
+            background-image: url("../images/reg-tablet-bg.png");
+            filter: none;
+        }
+    }
+
+
+    .container {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 140rem;
+        justify-content: space-between;
+        @media ($tablet) {
+            justify-content: center;
+        }
+    }
+    &__title{
+        @include h1();
+        margin-bottom: 8rem;
+        @media ($tablet) {
+        font-size: 7rem;
+        margin-bottom: 5rem;
+        }
+        @media ($tablet) {
+            margin-bottom: 5rem;
+            }
+    }
+
+    &__steps {
+        display: flex;
+        flex-direction: column;
+        margin: 11.1rem 0;
+        width: 45%;
+        @media ($tablet) {
+            display: none;
+        }
+
+        .step:first-child {
+            margin-bottom: 5rem;
+        }
+        .step:nth-child(2) {
+            margin-left: 17.5rem;
+            margin-bottom: 5rem;
+            position: relative;
+            
+        }
+        .step:nth-child(2)::before{
+            content: url("../images/Arrow-1.svg");
+            position: absolute;
+            top:-4rem;
+            left: -9.5rem;
+        }
+        .step:nth-child(2)::after{
+            content: url("../images/Arrow-2.svg");
+            position: absolute;
+            top: 2.7rem;
+            left: 105%;
+        }
+        .step:last-child{
+            margin-left: auto;
+        }
+    }
+
+    &__reg-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
+
+    &__google-link{
+        display: inline-block;
+        position: relative;
+        margin-bottom: 3rem;
+        width: 43.2rem;
+        padding: 1.2rem 0;
+        padding-left: 8.3rem;
+        padding-right: 6.2rem;
+        border-radius: 1.5rem;
+        border: 1px solid #CCCDE3;
+        background: radial-gradient(#F3F4FF 0%, #E1E3FF 100%);
+        box-shadow: 0px 0px 40px 0px rgba(0, 0, 0, 0.15);
+        color: $cardTextColor;
+        text-align: center;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 140%;
+        &:hover{
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.601);
+        }
+        @media ($tablet) {
+            padding-left: 7.9rem;
+            padding-right: 4.3rem;
+            width: 34.8rem;
+            font-size: 1.6rem;
+            margin-bottom: 2rem;
+        }
+        @media ($phone) {
+            margin-bottom: 3rem;
+            padding-left: 7rem;
+            padding-right: 4.6rem;
+            width: 31.4rem;
+            font-size: 1.4rem;
+        }
+
+        &::before {
+            content: url("../images/google-icon.svg");
+            position: absolute;
+            top: 1.3rem;
+            left: 3rem;
+            @media ($tablet) {
+            top: 1rem;
+            left: 2.5rem;
+        }
+    }
+}
+
+    &__or {
+        color: #909090;
+        text-align: center;
+        font-size: 1.6rem;
+        font-weight: 500;
+        line-height: 140%;
+        margin-bottom: 3rem;
+        position: relative;
+        @media ($tablet) {
+            font-size: 1.2rem;
+            margin-bottom: 2rem;
+            
+        }
+        @media ($phone) {
+            font-size: 1.2rem;
+            margin-bottom: 3rem;
+            
+        }
+        &::after {
+            content: url("../images/Line-3.svg");
+            position: absolute;
+            top:-0.65rem;
+            left: 6rem;
+            @media ($tablet) {
+            content: url("../images/Line-4.svg");
+            top:-0.4rem;
+            left: 4.5rem;
+            }
+            @media ($phone) {
+            content: url("../images/Line-5.svg");
+            }
+        }
+        &::before {
+            content: url("../images/Line-3.svg");
+            position: absolute;
+            top:-0.65rem;
+            right: 6rem;
+            @media ($tablet) {
+            content: url("../images/Line-4.svg");
+            top:-0.4rem;
+            right: 4.5rem;
+            }
+            @media ($phone) {
+            content: url("../images/Line-5.svg");
+            }
+        }
+    }
+
+
+    &__form{
+        display: flex;
+        flex-direction: column;
+        input {
+            @include input();
+            margin-bottom: 2rem;
+            @media ($tablet) {
+                margin-bottom: 1.6rem;
+            }
+        }
+        input:last-child {
+            margin-bottom: 5rem;
+            @media ($tablet) {
+                margin-bottom: 4rem;
+            }
+        }
+    }
+
+    &__signup-btn {
+        @include btnLarge();
+        margin-bottom: 1rem;
+    }
+
+    &__conditions {
+    color: $cardTextColor;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 300;
+    max-width: 40.6rem;
+    margin-bottom: 3rem;
+    @media ($tablet) {
+        font-size: 1.2rem;
+        width: 34.5rem;
+    }
+    @media ($phone) {
+        font-size: 1rem;
+        width: 28.8rem;
+    }
+    }
+    span {
+    color: $cardTextColor;
+    font-size: 2rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+    @media ($tablet) {
+        font-size: 1.6rem;
+    }
+    @media ($phone) {
+        font-size: 1.2rem;
+    }
+    }
+    &__signin {
+    color: $textColorBlue;
+    font-size: 2rem;
+    font-weight: 500;
+    text-decoration-line: underline;
+    @media ($tablet) {
+        font-size: 1.8rem;
+    }
+    @media ($phone) {
+        font-size: 1.4rem;
+    }
+    }
+}

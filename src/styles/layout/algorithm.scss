@@ -1,0 +1,110 @@
+.algorithm {
+    background-color: $backgroundColor;
+    padding: 8rem 1.5rem 9rem 1.5rem;
+    position: relative;
+    @media ($tablet) {
+        padding: 7rem 4.2rem 8rem;
+    }
+    @media ($phone) {
+        padding: 3rem 2rem 5rem;
+    }
+    
+    &::before {
+        position: absolute;
+        content: url("../images/lines-left.svg");
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        @media ($tablet) {
+            display: none;
+        }
+    }
+
+    &__wrapper {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        @media ($tablet) {
+            flex-direction: column-reverse;
+        }
+    }
+
+    &__title{
+        @include h2();
+        margin-bottom: 5rem;
+        position: relative;
+        z-index: 4;
+        @media ($tablet) {
+            margin-bottom: 4rem;
+        }
+        @media ($phone) {
+            margin-bottom: 3rem;
+        }
+    }
+    &__list {
+        position: relative;
+        max-width: 84rem;
+        z-index: 2;
+        @media ($phone) {
+            padding: 0 2rem;
+        }
+    }
+    &__item {
+        color:  #140E20;
+        font-size: 2.4rem;
+        font-weight: 600;
+        line-height: 140%;
+        margin-bottom: 4rem;
+        @media ($tablet) {
+            margin-bottom: 3rem;
+        }
+        @media ($phone) {
+            margin-bottom: 4rem;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+        
+        &-title {
+            @include itemTitle();
+            margin-bottom: 2.5rem;
+            @media ($tablet) {
+            margin-bottom: 2rem; 
+            }
+        }
+        &-text {
+            margin-bottom: 4rem;
+            color: $cardTextColor;
+            font-size: 2.2rem;
+            font-weight: 400;
+            line-height: 140%;
+            @media ($tablet) {
+                font-size: 2rem;  
+                margin-bottom: 3rem;
+            }
+            @media ($phone) {
+                font-size: 1.6rem;
+            }
+        }
+    }
+    &__image {
+        display: block;
+        margin-left: 7%;
+        object-fit: cover;
+        object-position: center;
+        align-self: center;
+        padding-top: 6.3rem;
+        padding-bottom: 8.3rem; 
+        @media ($tablet) {
+            width: 100%;
+            padding: 0 9rem;
+            margin: 0 auto;
+            margin-bottom: 5rem;
+        }
+        @media ($phone) {
+            margin-bottom: 5.6rem;
+            padding: 0;
+        }
+    }
+}

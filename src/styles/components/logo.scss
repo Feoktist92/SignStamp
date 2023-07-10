@@ -1,0 +1,15 @@
+.logo {
+width: 14.7rem;
+height: 11.4rem;
+
+
+@media ($tablet) {
+    width: 9.4rem;
+    height: 7.8rem;
+}
+
+@media ($phone) {
+    width: 7.7rem;
+    height: 5.3rem;
+}
+}

@@ -1,0 +1,102 @@
+.footer {
+    background-image: $headerColor;
+    padding: 0 1rem;
+    @media ($tablet) {
+        padding: 4rem 4rem 8rem;
+    }
+    @media ($phone) {
+        padding: 5rem 2.6rem 8rem;
+    }
+
+    .container {
+        max-width: 192rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        @media ($tablet) {
+            justify-content: space-between;
+        }
+        @media ($phone) {
+            justify-content: space-around;
+        }
+        
+    }
+    .logo {
+        margin-right: 3rem;
+        @media ($tablet) {
+            margin-right: 0;
+            align-self: flex-start;
+            margin-bottom: 2rem;
+        }
+
+    }
+    .logo-link {
+        @media ($tablet) {
+        align-self: flex-start;
+        }
+    }
+    &__nav {
+        display: flex;
+        align-items: center;
+        @media ($tablet) {
+            padding-top: 2rem;
+            flex-wrap: wrap;
+            max-width: 59%;
+        @media (max-width: 819px){
+            max-width: 64%;
+        }
+        @media ($phone) {
+            max-width: 44%;
+        }
+        }
+    }
+
+    &__nav-item{
+        margin-right: 6rem;
+        text-align: center;
+        @media ($tablet) {
+            text-align: start;
+            margin-right: 9.8rem;
+            margin-bottom: 2rem;
+            max-width: 16.9rem;
+            &:first-child {
+                margin-right: 21rem;
+            }
+            &:nth-child(even) {
+                margin-right: 0;
+            }
+        }
+
+        &:nth-child(4) {
+            margin-right: 0;
+        }
+        &:last-child {
+            margin-left: 6rem;
+            margin-right: 0;
+            @media ($tablet) {
+                margin-left: 0;
+            }
+        }
+           
+        a {
+            color: $textColor;
+            font-size: 1.6rem;
+            font-weight: 400;
+            text-transform: uppercase;
+            @media ($tablet) {
+                font-size: 1.2rem;
+            }
+            
+        }
+        .footer__signup {
+            color: $textFooterBlue;
+            font-size: 1.8rem;
+            font-weight: 500;
+            text-decoration-line: underline;
+            text-transform: uppercase;
+            @media ($tablet) {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}

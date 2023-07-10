@@ -1,0 +1,24 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    font-size: 10px;
+    font-family: $mainFont;
+}
+h1, h2, h3 {
+    font-family: $mainFont;
+}
+
+a {
+    text-decoration: none;
+    color: $textColor;
+}
+
+ul,ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+

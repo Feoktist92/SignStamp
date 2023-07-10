@@ -1,0 +1,113 @@
+.pluses {
+    background-color: $whiteColor;
+    padding: 10rem 1.5rem;
+    position: relative;
+    @media ($tablet) {
+        padding: 10rem 2rem;
+    }
+    @media ($tablet) {
+        padding: 8rem 4.5rem;
+    }
+
+    &::before {
+        position: absolute;
+        content: url("../images/decor.svg");
+        right: 0;
+        bottom: -15.8%;
+        z-index: 2;
+        @media ($tablet) {
+            content: url("../images/decor-tablet.svg");
+            bottom: -8%;
+        }
+    }
+
+    &::after {
+        @media ($phone) {
+        position: absolute;
+        content: url("../images/lines-pluses-phone.svg");
+        top: -30rem;
+        left: 0;
+        }
+        
+    }
+
+    &__wrapper-title {
+        max-width: 85rem;
+        margin: 0 auto;
+        margin-bottom: 5.1rem;
+        @media ($tablet) {
+            max-width: 75rem;
+        }
+        @media ($phone) {
+            span {
+                font-size: 0;
+            }
+            max-width: 27.8rem;
+        }
+    }
+
+    &__title {
+        @include h2();
+    }
+
+    &__wrapper {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-bottom: 6.1rem;
+        @media ($tablet) {
+            margin-bottom: 0;
+        }
+        @media ($phone) {
+            margin: 0 auto;
+            margin-bottom: 5rem;
+            width: 29rem;
+        }
+    }
+
+    &__info {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        z-index: 2;
+        @media ($tablet) {
+            position: absolute;
+            bottom: calc(23% - 10rem);
+            right: calc(35% - 21rem);
+        }
+        @media ($phone) {
+            position: static;
+        }
+
+        &-btn {
+            @include btnLarge();
+            margin: 0 auto;
+            margin-bottom: 3rem;
+            position: relative;
+            z-index: 1;
+        }
+        
+        &-rate {
+            position: relative;
+            font-size: 2.4rem;
+            z-index: 1;
+            margin: 0 auto;
+            color: transparent;    
+            -webkit-background-clip: text;
+            background-clip: text;
+            background-image: radial-gradient(#000972 100%,#000EC1 100%,#0010E1 100%,#2E3DFA 100%);
+            @media ($tablet) {
+                font-size: 1.8rem;
+            }
+            @media ($phone) {
+                font-size: 1.6rem;
+            }
+            &::after {
+                content: url("../images/Line-1.svg");
+                position: absolute;
+                top:0;
+                right: -2.3rem;
+            }
+        }
+    }
+}

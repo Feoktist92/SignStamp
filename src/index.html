@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/index.scss">
+    <title>SignStamp</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+        <a href="#" class="logo-link"><img class="logo" src="../src/images/logo.svg" alt="logo"/></a>
+        <ul class="header__nav">
+            <li class="header__nav-item"><a href="#audience" class="link" id="audience-link">Для кого</a></li>
+            <li class="header__nav-item"><a href="#pluses" class="link" id="pluses-link">Плюсы</a></li>
+            <li class="header__nav-item"><a href="#algorithm" class="link" id="algorithm-link">Как пользоваться</a></li>
+            <li class="header__nav-item"><a href="#tarifs" class="link" id="tarifs-link">Тарифы</a></li>
+        </ul>
+        <div class="header__entry">
+            <a href="#">
+                <img class="login" src="../src/images/login.svg" class="header__login-image" alt="login"/>
+            </a>
+            <a href="#" class="header__entry-signup-btn">Регистрация</a>
+        </div>
+        </div>
+    </header>
+    <section class="offer" >
+        <div class="container">
+            <div class="offer__steps">
+                <div class="step"><strong>Загрузи</strong>документ</div>
+                <div class="step"><strong>Расставь</strong>подпись и печать</div>
+                <div class="step"><strong>Скачай</strong>готовый файл</div>
+            </div>
+            <div class="offer__reg-form">
+                <h1 class="offer__title">SignStamp</h1>
+                <p class="offer__text">быстрая онлайн подпись на важные документы </p>
+                <form class="offer__form" action="#">
+                    <input type="email" placeholder="Электронная почта"/>
+                    <input type="password" placeholder="Придумайте пароль"/>
+                    <input type="password" placeholder="Повторите пароль"/>
+                <a href="#" class="offer__signup-btn">Зарегистрироваться</a>
+                </form>
+                <p class="offer__conditions">Создавая аккаунт, я принимаю следующие документы: <a href="#" class="link"><u>Условия обслуживания</u></a> и <a href="#" class="link"><u>Конфиденциальность</u></a>.
+                </p>
+                <span>или</span>
+                <a class="offer__signin link" href="#">Войти в личный кабинет</a>
+            </div>
+        </div>
+    </section>
+    <section class="audience" id="audience">
+        <div class="container">
+            <h2 class="audience__title">Для кого подойдет SignStamp</h2>
+            <div class="audience__wrapper">
+            <div class="audience__images">
+            <img class="audience__image" src="../src/images/audience.png" alt="audience"/>
+            <a href="#" class="audience__play link"><img src="../src/images/play.svg" alt="play"/></a>
+            </div>
+            <div class="audience__text">
+                    <div class="audience__item">Работаешь в офисе с большим
+                        и не очень документооборотом</div>
+                    <div class="audience__item">Работаешь на себя и не имеешь команды юристов и бухгалтеров</div>
+                    <div class="audience__help">Мы всегда рядом и готовы помочь!</div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <section class="pluses" id="pluses">
+        <div class="container">
+            <div class="pluses__wrapper-title">
+                <h2 class="pluses__title">Легкий в использовании <span>Быстрый в результатах</span></h2>
+            </div>
+            <div class="pluses__wrapper">
+                <div class="plus">
+                    <h3 class="plus__title">Хранение в облаке</h3>
+                    <p class="plus__text">Вам не нужно будет скачивать приложений, просто зарегистрируйтесь на нашем сайте</p>
+                </div>
+                <div class="plus">
+                    <h3 class="plus__title">Экономия времени</h3>
+                    <p class="plus__text">C нами вы можете больше не искать директора, чтобы поставить подпись на очередном документе</p>
+                </div>
+                <div class="plus">
+                    <h3 class="plus__title">Понятный интерфейс</h3>
+                    <p class="plus__text">Вам не нужно уметь разбираться в сложных программах, всего три клика и документ готов</p>
+                </div>
+                <div class="plus">
+                    <h3 class="plus__title">Умная обработка</h3>
+                    <p class="plus__text">Сервис сам удалит ненужный фон с подписи и сделает из печати нужный размер 40х40мм</p>
+                </div>
+                <div class="plus">
+                    <h3 class="plus__title">Универсальный сервис</h3>
+                    <p class="plus__text">Вы  можете работать и с компьютера и с телефона. Выбирайте сами, как будет удобно </p>
+                </div>
+            </div>
+            <div class="pluses__info">
+                <a href="#" class="pluses__info-btn">Зарегистрироваться</a>
+                <a href="#" class="pluses__info-rate link">Узнать больше о тарифах</a>
+            </div>
+        </div>
+    </section>
+    <section class="algorithm" id="algorithm">
+        <div class="container">
+            <h2 class="algorithm__title">Готовый документ в три клика</h2>
+            <div class="algorithm__wrapper">
+                <ol class="algorithm__list">
+                    <li class="algorithm__item">
+                        <p class="algorithm__item-title">1. Загрузи документ, на который нужны подпись и печать</p>
+                        <p class="algorithm__item-text">Загрузить можно любой удобный формат: pdf, doc, xls, jpeg, png. После загрузки файлы автоматически соберутся в многостраничный документ</p>
+                    </li>
+                    <li class="algorithm__item">
+                        <p class="algorithm__item-title">2. Загрузи подпись и печати</p>
+                        <p class="algorithm__item-text">Нам не потребуется четкого скана, достаточно будет фотографии! Выдели нужную область в рамку и сервис сам уберет фон и подгонит размеры печати до требуемых 40х40мм! Все загруженные подписи и печати сохраняются в облачное хранилище, чтобы в дальнейшем их можно было использовать в любом документе</p>
+                    </li>
+                    <li class="algorithm__item">
+                        <p class="algorithm__item-title">3. Скачай готовый документ!</p>
+                        <p class="algorithm__item-text">Выгрузить можно любым удобным способом - многостраничный PDF или архив с jpg-файлами</p>
+                    </li>
+                </ol>
+                <img class="algorithm__image" src="../src/images/algorithm-photo.png" alt="algorithm-photo"/>
+            </div>
+        </div>
+    </section>
+    <section class="tarifs" id="tarifs">
+        <div class="container">
+            <div class="tarifs__title">Тарифные планы</div>
+            <div class="tarifs__cards">
+                <div class="card">
+                    <h3 class="card__title">Бесплатно</h3>
+                    <div class="card__desc">Подойдет, если маленький документооборот и небольшие документы</div>
+                    <div class="card__desc">Добавлять подписи и печати можно только в одностраничные файлы </div>
+                    <div class="card__desc last">Выгрузка готовых - один файл в день</div>
+                    <div class="card__price">0 руб</div>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Поштучно</h3>
+                    <div class="card__desc">Подойдет, если подпись документов нужна время от времени</div>
+                    <div class="card__desc">Нет ограничений на количество страниц в документе</div>
+                    <div class="card__desc last">Оплата за каждый файл отдельно</div>
+                    <div class="card__price">30 руб/штука</div>
+                </div>
+                <div class="card">
+                    <h3 class="card__title">Пакеты</h3>
+                    <div class="card__desc">Подойдет, если большой документооборот</div>
+                    <div class="card__desc">Нет ограничений на количество страниц в документе</div>
+                    <div class="card__desc last">Нет ограничений на количество выгружаемых файлов в день</div>
+                    <div class="card__price choice">
+                        300 руб/месяц
+                        <br/>
+                        3000 руб/год
+                    </div>
+                </div>
+            </div>
+            <div class="tarifs__ps">*Выбор тарифного плана доступен зарегистрированным пользователям</div>
+            <div class="tarifs__entry">
+                <a class="tarifs__signup-btn" href="#">Зарегистрироваться</a>
+                <a class="tarifs__login link" href="#">Уже есть аккаунт</a>
+            </div>
+        </div>
+    </section>
+    <section class="registration">
+        <div class="container">
+            <div class="registration__steps">
+                <div class="step"><strong>Загрузи</strong>документ</div>
+                <div class="step"><strong>Расставь</strong>подпись и печать</div>
+                <div class="step"><strong>Скачай</strong>готовый файл</div>
+            </div>
+            <div class="registration__reg-form">
+                <h1 class="registration__title">SignStamp</h1>
+                    <a href="#" class="registration__google-link">Регистрация через Google</a>
+                    <div class="registration__or">ИЛИ</div>
+                <form class="registration__form" action="#">
+                    <input type="email" placeholder="Электронная почта"/>
+                    <input type="password" placeholder="Придумайте пароль"/>
+                    <input type="password" placeholder="Повторите пароль"/>
+                </form>
+                <a href="#" class="registration__signup-btn">Зарегистрироваться</a>
+                <p class="registration__conditions">Создавая аккаунт, я принимаю следующие документы: <a href="#" class="registration__conditions-link"><u>Условия обслуживания</u></a> и <a href="#" class="registration__conditions-link"><u>Конфиденциальность</u></a>.
+                </p>
+                <span>Уже есть аккаунт?</span>
+                <a class="registration__signin link" href="#">Войти в личный кабинет</a>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="container">
+        <a href="#" class="logo-link"><img class="logo" src="../src/images/logo.svg" alt="logo"/></a>
+        <ul class="footer__nav">
+            <li class="footer__nav-item"><a href="#" class="link">тарифы</a></li>
+            <li class="footer__nav-item"><a href="#" class="link">связаться с нами</a></li>
+            <li class="footer__nav-item"><a href="#" class="link">политика конфиденциальности</a></li>
+            <li class="footer__nav-item"><a href="#" class="link">условия обслуживания</a></li>
+            <li class="footer__nav-item"><a href="#" class="footer__signup link">Зарегистрироваться</a></li>
+        </ul>
+        </div>
+    </footer>
+</div>
+<script src="https://code.jquery.com/jquery-3.7.0.min.js" integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/page-scroll-to-id@1.6.8/jquery.malihu.PageScroll2id.js"></script>
+<script src="./index.js"></script>
+</body>
+</html>
